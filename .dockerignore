@@ -1,0 +1,32 @@
+# dependencies / build output (rebuilt inside the image)
+node_modules
+dist
+.vite
+npm-debug.log*
+
+# VCS & CI
+.git
+.gitignore
+.github
+Jenkinsfile
+
+# secrets — never sent to the Docker daemon
+.env
+.env.*
+*.pem
+*.key
+.npmrc
+.aws
+
+# not needed to build the app
+deploy
+infra
+evidence
+scripts
+README.md
+*.md
+.vscode
+.idea
+.DS_Store
+Dockerfile
+.dockerignore
