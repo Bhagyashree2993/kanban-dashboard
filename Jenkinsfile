@@ -36,7 +36,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'DOCKERHUB_REPO', defaultValue: 'CHANGE_ME/kanban-dashboard', description: 'Docker Hub repository (user/name)')
+        string(name: 'DOCKERHUB_REPO', defaultValue: 'guvibhagyashreekhandare/kanban-dashboard', description: 'Docker Hub repository (user/name)')
         choice(name: 'DEPLOY_MODE', choices: ['local', 'ssh'], description: 'local = Jenkins runs on the app EC2; ssh = deploy to a remote EC2')
         string(name: 'EC2_HOST', defaultValue: '', description: 'EC2 public IP/DNS (ssh mode)')
         string(name: 'EC2_USER', defaultValue: 'ubuntu', description: 'SSH user (ssh mode)')
